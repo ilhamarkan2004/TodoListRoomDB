@@ -5,6 +5,8 @@ import androidx.room.*
 
 @Dao
 interface TodoDAO {
+
+
     @Query("SELECT * FROM todo")
     fun loadTodos() : LiveData<List<Todo>>
 

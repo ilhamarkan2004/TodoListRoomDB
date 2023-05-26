@@ -3,16 +3,14 @@ package com.example.roomDB
 import android.app.AlertDialog
 import android.content.DialogInterface
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.roomdb.R
+import com.example.roomdb.database.Todo
 import com.example.roomdb.databinding.ListItemBinding
-import com.example.roomdb.Todo
 
 
 class TodoAdapter(private val viewModel: TodoViewModel) :
