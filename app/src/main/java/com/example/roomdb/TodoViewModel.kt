@@ -40,6 +40,8 @@ class TodoViewModel(application : Application) : AndroidViewModel(application) {
 //        val currentList = _todos.value ?: arrayListOf()
 //        currentList.add(Todo(newId, text))
 //        _todos.postValue(currentList)
+
+        repoitory.insert(Todo(0,text))
     }
     fun removeTodo(pos : Int){
         //erorr
